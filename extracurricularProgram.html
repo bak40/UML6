@@ -1,0 +1,99 @@
+<!DOCTYPE html> <!--Main에서 강의조회를 누르면 비교과조회가 나온다-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=chrome">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UML</title>
+    <style>
+        div#mobile {
+            box-sizing: border-box;
+            width: 300px;
+            height: 500px;
+            margin: 20px auto;
+            border: 6px solid black;
+            border-radius: 40px 40px 40px 40px;
+            padding: 20px;
+            background-image: url('symbol.jpg');
+            background-repeat: no-repeat;
+            background-position: 50% 60%;
+		}
+        p {
+            width: 200px;
+            height: 20px;
+            margin: 20px auto;
+            border-radius: 10px 10px 10px 10px;
+            padding: 20px;
+            background-color: lightskyblue;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        table {
+            border: solid 1px black;
+            border-collapse:collapse;
+            text-align: center;
+        }
+
+        td {
+            border: 2px solid lightslategrey;
+            color: darkslateblue;
+            font-weight: bold;
+        }
+    </style>
+    <script>
+        function moveTo(){
+
+            var radio = document.getElementsByName("radio");
+            
+            var radio_btn_check = 0;
+            for(var i = 0; i<radio.length; i++){
+                if(radio[0].checked==true){
+                    location.href="extracuricular_1.html";
+                }
+                else if(radio[1].checked==true){
+                    location.href="extracuricular_2.html";
+                }
+                else if(radio[2].checked==true){
+                    location.href="extracuricular_3.html";
+                }
+                else if(radio[3].checked==true){
+                    location.href="extracuricular_4.html";
+                }
+                else if(radio[4].checked==true){
+                    location.href="extracuricular_5.html";
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="mobile">
+        <h4 style="text-align: center;">•∙• ――――― •∙•</h4>
+        <p id="head">강의 조회</p>
+        <h3>>비교과 조회</h3>
+        <form method="post" id="myForm_4" action="">
+            <table border="1" align = "center">
+                <tr>
+                    <td><input type="radio" id="radio" name="radio"></td> <td>뉴노멀 시대를 위한 디자<br>인 전략과 방향성</td>
+                </tr>
+                <tr>
+                    <td><input type="radio" id="radio" name="radio"></td> <td>ALTEOGEN 연구소 직무<br>소개 특강</td>
+                </tr>
+                <tr>
+                    <td><input type="radio" id="radio" name="radio"></td> <td>삶의 방식으로서의 철학(2021 CJU 인문강좌 리좀_2차)</td>
+                </tr>
+                <tr>
+                    <td><input type="radio" id="radio" name="radio"></td> <td>청주대학교 토론대회</td>
+                </tr>
+                <tr>
+                    <td><input type="radio" id="radio" name="radio"></td> <td>가상현실과 조직생활 인사<br>이트</td>
+                </tr>
+            </table>
+        </form>
+        <br>
+        <input style="color: royalblue; font-weight: bold; float: right;" type="button" value="조회" onclick="moveTo()">
+    </div>
+</body>
+</html>

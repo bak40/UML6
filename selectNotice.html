@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=chrome">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UML</title>
+    <style>
+        div#mobile {
+            box-sizing: border-box;
+            width: 300px;
+            height: 500px;
+            margin: 20px auto;
+            border: 6px solid black;
+            border-radius: 40px 40px 40px 40px;
+            padding: 20px;
+            background-image: url('symbol.jpg');
+            background-repeat: no-repeat;
+            background-position: 50% 70%;
+            
+		}
+        p {
+            width: 200px;
+            height: 20px;
+            margin: 20px auto;
+            border-radius: 10px 10px 10px 10px;
+            padding: 20px;
+            background-color: lightskyblue;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        table {
+            border: solid 1px black;
+            border-collapse:collapse;
+            padding: 20px;
+            text-align: center;
+        }
+
+        td {
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-left: 5px;
+            padding-right: 5px;
+            border: 2px solid lightslategrey;
+            color: darkslateblue;
+            font-weight: bold;
+        }
+    </style>
+    <script>
+        function moveTo(){
+
+            var radio = document.getElementsByName("radio");
+            
+            var radio_btn_check = 0;
+            for(var i = 0; i<radio.length; i++){
+                if(radio[0].checked==true){
+                    location.href="noticeJava.html";
+                }
+                else if(radio[1].checked==true){
+                    location.href="noticePython.html";
+                }
+                else if(radio[2].checked==true){
+                    location.href="noticeSibunseol.html";
+                }
+                else if(radio[3].checked==true){
+                    location.href="noticeDataStructure.html";
+                }
+                else if(radio[4].checked==true){
+                    location.href="noticeOs.html";
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="mobile">
+        <h4 style="text-align: center;">•∙• ――――― •∙•</h4>
+        <p id="head">공지사항 조회</p>
+        <h3 style="text-align: center;">조회 할 과목을 선택하세요.</h3>
+        <form method="post" id="myForm_3" action="">
+            <table border="1" align = "center">
+                <tr>
+                    <td><input type="radio" id="radio" name="radio"></td> <td>JAVA 프로그래밍2</td>
+                </tr>
+                <tr>
+                    <td><input type="radio" id="radio" name="radio"></td> <td>python 프로그래밍2</td>
+                </tr>
+                <tr>
+                    <td><input type="radio" id="radio" name="radio"></td> <td>시스템 분석 설계 및<br> 지식 재산</td>
+                </tr>
+                <tr>
+                    <td><input type="radio" id="radio" name="radio"></td> <td>자료구조</td>
+                </tr>
+                <tr>
+                    <td><input type="radio" id="radio" name="radio"></td> <td>운영체제</td>
+                </tr>
+            </table>
+        </form>
+        <br>
+        <input style="color: royalblue; font-weight: bold; float: right;" type="button" value="조회" onclick="moveTo()">
+    </div>
+</body>
+</html>

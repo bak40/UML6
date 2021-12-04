@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=chrome">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UML</title>
+    <style>
+        div#mobile {
+            box-sizing: border-box;
+            width: 300px;
+            height: 500px;
+            margin: 20px auto;
+            border: 6px solid black;
+            border-radius: 40px 40px 40px 40px;
+            padding: 20px;
+            background-image: url('symbol.jpg');
+            background-repeat: no-repeat;
+            background-position: 50% 70%;
+		}
+        p {
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div id="mobile">
+        <h4 style="text-align: center;">•∙• ――――― •∙•</h4>
+        <h1 style="font-size: 30; font-weight: bold;">설정</h1>
+        <br>
+        <h3 style="color: royalblue;">-푸시 알림</h3>
+        <p style="font-weight: bold;">
+            강의 알림
+            <select name="date1">
+                <option >당일</option>
+                <option >1일 전</option>
+                <option >2일 전</option>
+                <option selected="selected">3일 전</option>
+                <option >4일 전</option>
+                <option >5일 전</option>
+                <option >6일 전</option>
+                <option >7일 전</option>
+            </select>
+            &nbsp&nbsp&nbsp&nbsp허용 <input type="checkbox" checked>&nbsp&nbsp&nbsp&nbsp<input type="button" value="수정" style="color: royalblue;">
+        </p>
+        <p style="font-weight: bold;">
+            과제 알림
+            <select name="date2">
+                <option >당일</option>
+                <option >1일 전</option>
+                <option >2일 전</option>
+                <option selected="selected">3일 전</option>
+                <option >4일 전</option>
+                <option >5일 전</option>
+                <option >6일 전</option>
+                <option >7일 전</option>
+            </select>
+            &nbsp&nbsp&nbsp&nbsp&nbsp허용<input type="checkbox" checked>&nbsp&nbsp&nbsp&nbsp<input type="button" value="수정" style="color: royalblue;">
+        </p>
+        <p style="font-weight: bold;">
+            공지사항 알림
+            <select name="date3">
+                <option selected="selected">당일</option>
+                <option >1일 전</option>
+                <option >2일 전</option>
+                <option >3일 전</option>
+                <option >4일 전</option>
+                <option >5일 전</option>
+                <option >6일 전</option>
+                <option >7일 전</option>
+            </select>
+            &nbsp허용 <input type="checkbox" checked> <input type="button" value="수정" style="color: royalblue;">
+        </p>
+    </div>
+</body>
+</html>
